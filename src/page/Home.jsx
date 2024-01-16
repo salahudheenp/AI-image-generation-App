@@ -55,7 +55,6 @@ const [searchText, setSearchText] = useState("")
                   data={allPosts}
                   title="No Posts Yet"
                 />
-                <RenderCards />
               )}
             </div>
         </>
