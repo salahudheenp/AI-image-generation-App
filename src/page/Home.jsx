@@ -51,10 +51,11 @@ const [searchText, setSearchText] = useState("")
                   title="No Search Results Found"
                 />
               ) : (
-                <RenderCards
-                  data={allPosts}
-                  title="No Posts Yet"
-                />
+                // <RenderCards
+                //   data={allPosts}
+                //   title="No Posts Yet"
+                // />
+                <RenderCards />
               )}
             </div>
         </>
