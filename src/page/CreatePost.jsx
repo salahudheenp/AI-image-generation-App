@@ -1,5 +1,9 @@
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-import React from 'react'
+import { preview } from '../assets';
+import { getRandomPrompt } from '../utils';
+import { FormField, Loader } from '../components';
 
 const CreatePost = () => {
   return (
