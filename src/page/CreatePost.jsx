@@ -7,8 +7,6 @@ import {getRandomPrompt} from '..'
 
 const CreatePost = () => {
 
-
-
   const navigate = useNavigate();
 
   const [form, setForm] = useState({
