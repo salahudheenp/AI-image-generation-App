@@ -14,11 +14,12 @@ const CreatePost = () => {
         photo: "",
     });
 
+    // state
     const [generatingImg, setGeneratingImg] = useState(false);
     const [loading, setLoading] = useState(false);
 
     const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
-
+// handle SurpriseMe
     const handleSurpriseMe = () => {
         const randomPrompt = getRandomPrompt(form.prompt);
         setForm({ ...form, prompt: randomPrompt });
@@ -114,7 +115,7 @@ const CreatePost = () => {
                         ) : (
                             <img src={preview} alt="preview" className="w-9/12 h-9/12 object-contain opacity-40" />
                         )}
-
+{/* generate image  */}
                         {generatingImg && (
                             <div className="absolute inset-0 z-0 flex justify-center items-center bg-[rgba(0,0,0,0.5)] rounded-lg">
                                 <Loader />
