@@ -35,7 +35,7 @@ const Home = () => {
                     </div>
                 ) : (
                     <>
-                    {/* search text */}
+                        {/* search text */}
                         {searchText && (
                             <h2 className="font-medium text-[#66e75] text-xl mb-3">
                                 Showing Resuls for <span className="text-[#222328]">{searchText}</span>:
